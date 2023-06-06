@@ -37,3 +37,61 @@ console.log(studentiVotiAlti);
 const studentiVotiIdAlti = studenti.filter(studente => studente.voto > 70 && studente.iq > 120);
 console.log(studentiVotiIdAlti);
 
+
+
+
+
+
+const biciDaCorsa = [
+    { nome: "Bici 1", peso: 7 },
+    { nome: "Bici 2", peso: 6 },
+    { nome: "Bici 3", peso: 8 },
+    { nome: "Bici 4", peso: 5 },
+  ];
+
+  let pesoMinimo = biciDaCorsa[0].peso;
+  let biciPesoMinimo = biciDaCorsa[0];
+  
+
+  for (let i = 1; i < biciDaCorsa.length; i++) {
+    const { peso } = biciDaCorsa[i]; 
+  
+    if (peso < pesoMinimo) {
+      pesoMinimo = peso;
+      biciPesoMinimo = biciDaCorsa[i];
+    }
+  }
+  
+  console.log(`La bici più leggera è ${biciPesoMinimo.nome} con un peso di ${biciPesoMinimo.peso} kg.`);
+  
+
+
+
+
+const squadre = [
+    { nome: 'Milan', puntiFatti: 0, falli: 0 },
+    { nome: 'Juventus', puntiFatti: 0, falli: 0 },
+    { nome: 'Inter', puntiFatti: 0, falli: 0 },
+    { nome: 'Roma', puntiFatti: 0, falli: 0 },
+  ];
+  
+ 
+  function generateRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+ 
+  squadre.forEach((squadra) => {
+    squadra.puntiFatti = generateRandomNumber(0, 100);
+    squadra.falliSubiti = generateRandomNumber(0, 50);
+  });
+  
+ 
+  const nuovoArray = squadre.map(({ nome, falli }) => ({ nome, falli }));
+  
+
+  console.log('Array originale:');
+  console.log(squadre);
+  console.log('Nuovo array con nomi e falli subiti:');
+  console.log(nuovoArray);
+  

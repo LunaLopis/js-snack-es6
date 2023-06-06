@@ -1,10 +1,9 @@
-
-
-
-
-
-
-
+1. dichiaro variabile per il tavolo.
+2. array per la lista invitati.
+3. dichiaro la lista vuota.
+4. ciclo for each
+4.1 attributi nome tavolo, array invitati e posti dall'array +1.
+5. stampo in console.
 
 
 SNACK 1
@@ -29,3 +28,26 @@ Id  Name                Grades
 196 Luigi Grimaldello 	    68
 102 Piero della Francesca   50
 120 Francesca da Polenta    84
+
+SNACK 3
+Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare in console la bici con peso minore utilizzando destructuring e template literal.
+
+1. Creazione dell'array di oggetti che descrivono le bici.
+2. Inizializzazione del peso minimo con il peso della prima bici.
+3.Ciclo attraverso le bici per trovare quella con il peso minimo.
+4. Destructuring per il peso della bici corrente.
+5. Stampa in console della bici con peso minore utilizzando il template literal.
+
+SNACK 4
+Creare un array di oggetti di squadre di calcio.
+Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+Nome sarà l'unica proprietà da compilare, le altre saranno tutte settate a 0.
+Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti.
+Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+1. Array di squadre di calcio.
+2. Funzione per generare numeri casuali compresi tra min e max
+3. Generazione dei numeri casuali per punti fatti e falli subiti.
+4.Creazione del nuovo array con solo nomi e falli subiti
+5. Stampa in console dell'array originale e del nuovo array
